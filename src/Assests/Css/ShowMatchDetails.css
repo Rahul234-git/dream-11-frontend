@@ -1,0 +1,21 @@
+.match-details-title {
+    color: darkslateblue;
+    text-align: center;
+}
+table {
+    border: 2px solid forestgreen;
+    width: 100%;
+    height: 100%;
+}
+th {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+.matchId {
+    color: blue;
+    text-decoration: underline;
+}

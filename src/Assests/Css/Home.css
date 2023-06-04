@@ -1,0 +1,374 @@
+.homeHeader {
+    background-color: rgb(89,37,211);
+    width: 100%;
+    padding: 40px;
+}
+.logo {
+    height: 47px;
+    width: 199px;
+    position: absolute;
+    left: 23px;
+    top: 24px;
+}
+.blogsBtn {
+    position: absolute;
+    left: 260px;
+    top: 31px;
+    color: white;
+    font-weight: 700;
+
+}
+.pointSystemBtn {
+    position: absolute;
+    top: 33px;
+    left: 343px;
+    color: white;
+    font-weight: 700;
+}
+.aboutUsBtn {
+    position: absolute;
+    top: 33px;
+    left: 480px;
+    color: white;
+    font-weight: 700;
+    
+
+}
+.offersBtn {
+    position: absolute;
+    top: 33px;
+    left: 580px;
+    color: white;
+    font-weight: 700;
+
+}
+.show-match-details {
+    position: absolute;
+    top: 33px;
+    left: 780px;
+    color: white;
+    font-weight: 700;
+
+}
+.headerTitle {
+    position: absolute;
+    left: 307px;
+}
+.box1 {
+    position: absolute;
+    top: 600px;
+    left: 39px;
+    border-radius: 5px;
+    background-color: #8B22D0;
+    height: 153px;
+    width: 258px;
+}
+.depositIcon {
+    height: 52px;
+    width: 48px;
+    position: absolute;
+    left: 107px;
+    top: 11px;
+}
+.deposit-offer {
+    color: white;
+    position: absolute;
+    top: 47px;
+    left: 70px;
+}
+.deposite-title {
+    color: whitesmoke;
+    position: absolute;
+    left: 29px;
+    top: 83px;
+}
+.deposit {
+    color: whitesmoke;
+    position: absolute;
+    left: 96px;
+    top: 120px;
+
+}
+.box2 {
+    position: absolute;
+    top: 600px;
+    left: 346px;
+    border-radius: 5px;
+    background-color:#EB6DA5;
+    height: 153px;
+    width: 258px;
+
+}
+.signupIcon {
+    height: 52px;
+    width: 48px;
+    position: absolute;
+    left: 107px;
+    top: 11px;
+
+}
+.signup-offer {
+    color: white;
+    position: absolute;
+    top: 47px;
+    left: 70px;
+
+}
+.signup-title {
+    color: whitesmoke;
+    position: absolute;
+    left: 51px;
+    top: 83px;
+
+}
+.registration {
+    color: whitesmoke;
+    position: absolute;
+    left: 89px;
+    top: 120px;
+
+}
+.box3 {
+    position: absolute;
+    top: 600px;
+    left: 646px;
+    border-radius: 5px;
+    background-color:rgb(255, 82, 82);
+    height: 153px;
+    width: 258px;
+}
+.refer-earn {
+    color: white;
+    position: absolute;
+    top: 47px;
+    left: 70px;
+
+}
+.refer-earn-title {
+    color: whitesmoke;
+    position: absolute;
+    left: 53px;
+    top: 83px;
+
+}
+.friends-money {
+    color: whitesmoke;
+    position: absolute;
+    left: 43px;
+    top: 120px;
+
+}
+.box4 {
+    position: absolute;
+    top: 600px;
+    left: 958px;
+    border-radius: 5px;
+    background-color:#2980B9;
+    height: 153px;
+    width: 258px;
+
+}
+.fourOne-offer {
+    color: white;
+    position: absolute;
+    top: 47px;
+    left: 70px;
+
+}
+.fourOne-title {
+    color: whitesmoke;
+    position: absolute;
+    left: 53px;
+    top: 83px;
+}
+.free {
+    color: whitesmoke;
+    position: absolute;
+    left: 43px;
+    top: 120px;
+
+}
+.halaplaybenefits {
+    position: absolute;
+    top: 751px;
+    left: 472px;
+
+}
+.box5 {
+    position: absolute;
+    top: 825px;
+    left: 39px;
+    border-radius: 5px;
+    background-color:rgb(112,111,211);
+    height: 153px;
+    width: 258px;
+}
+.box6 {
+    position: absolute;
+    top: 825px;
+    left: 346px;
+    border-radius: 5px;
+    background-color:rgb(22,160,133);
+    height: 153px;
+    width: 258px;
+}
+
+.box7 {
+    position: absolute;
+    top: 825px;
+    left: 646px;
+    border-radius: 5px;
+    background-color:rgb(41,128,185);
+    height: 153px;
+    width: 258px;
+
+}
+.box8 {
+    position: absolute;
+    top: 825px;
+    left: 958px;
+    border-radius: 5px;
+    background-color:rgb(140,122,230);
+    height: 153px;
+    width: 258px;
+}
+.easySteps {
+    position: absolute;
+    top: 974px;
+    left: 297px;
+}
+.box9 {
+    position: absolute;
+    top: 1113px;
+    height: 100px;
+    width: 370px;
+    padding: 15px;
+    background-color: lightgrey;
+    left: 76px;
+    border-radius: 4px;
+}
+.box10 {
+    position: absolute;
+    top: 1113px;
+    height: 100px;
+    width: 370px;
+    padding: 15px;
+    background-color: lightgrey;
+    left: 472px;
+    border-radius: 4px;
+}
+.box11 {
+    position: absolute;
+    top: 1064px;
+    height: 65px;
+    width: 199px;
+    padding: 15px;
+    background-color: ghostwhite;
+    left: 303px;
+    border-radius: 4px;
+
+}
+.box12 {
+    position: absolute;
+    top: 1064px;
+    height: 65px;
+    width: 199px;
+    padding: 15px;
+    background-color: ghostwhite;
+    left: 740px;
+    border-radius: 4px;
+}
+.box13 {
+    position: absolute;
+    top: 1113px;
+    height: 100px;
+    width: 370px;
+    padding: 15px;
+    background-color: lightgrey;
+    left: 867px;
+    border-radius: 4px;
+
+}
+.box14 {
+    position: absolute;
+    top: 1064px;
+    height: 65px;
+    width: 199px;
+    padding: 15px;
+    background-color: ghostwhite;
+    left: 1035px;
+    border-radius: 4px;
+}
+.footer-1 {
+    position: absolute;
+    top: 1300px;
+    background-color: #171923;
+    width: 100%;
+    height: 200px;
+}
+.followUs {
+    color: white;
+    text-align: center;
+}
+.fb-Icon {
+    height: 22px;
+    width: 27px;
+    position: absolute;
+    left: 513px;
+}
+.twitter-Icon {
+    height: 22px;
+    width: 27px;
+    position: absolute;
+    left: 626px;
+    background-color: white;
+
+}
+.instagram-Icon {
+    height: 22px;
+    width: 27px;
+    position: absolute;
+    left: 700px;
+    background-color: white;
+
+}
+.coplaint-text {
+    color: white;
+    position: absolute;
+    top: 94px;
+    font-size: 25px;
+    left: 432px;
+}
+.mail {
+    color: white;
+    position: absolute;
+    top: 153px;
+    font-size: 25px;
+    left: 543px;
+}
+.footer-2 {
+    position: absolute;
+    top: 1494px;
+    background-color: #EDF2F7;
+    width: 100%;
+    height: 349px;
+
+}
+.footer-logo {
+    height: 47px;
+    width: 199px;
+    position: absolute;
+    left: 524px;
+    top: 10px;
+
+}
+.company-name {
+    position: absolute;
+    left: 448px;
+    top: 47px;
+    color: #644a8f;
+    
+}
+.teamIcon {
+
+}
