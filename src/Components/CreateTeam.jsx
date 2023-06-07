@@ -43,8 +43,7 @@ const CreateTeam = () => {
             headers:{"Content-Type":"application/json"},
             data: dataTeam
         }).then(result => {
-            console.log(`Team Created Succesfully!!!`)
-            console.log("RESULT!!!!!",result);
+            alert("Team Added Successfully!!!!");
         }).catch(error => {
             console.log(error);
         })
