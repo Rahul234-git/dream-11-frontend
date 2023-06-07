@@ -1,0 +1,41 @@
+.create-team-title {
+    text-align: center;
+    color: darkslateblue;
+}
+.create-team-cont {
+    position: absolute;
+    left: 457px;
+    width: 440px;
+    height: 250px;
+    border-radius: 25px;
+    background-color: gainsboro;
+}
+.select-team-label {
+    position: absolute;
+    top: 9px;
+    left: 173px;
+    color: magenta;
+    font-weight: 600;
+
+}
+.select-item {
+    position: absolute;
+    top: 49px;
+    left: 102px;
+    padding: 8px 99px;
+    border: none;
+    border-radius: 14px;
+    color: mediumpurple;
+}
+.team-submit-btn {
+    position: absolute;
+    top: 187px;
+    left: 322px;
+    padding: 3px 16px;
+    color: darkslateblue;
+}
+.view-team {
+    position: absolute;
+    top: 36px;
+    left: 671px;
+}

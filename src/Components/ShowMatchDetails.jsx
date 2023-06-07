@@ -8,6 +8,7 @@ import '../Assests/Css/ShowMatchDetails.css';
 const ShowMatchDetails = () => {
     const navigate = useNavigate();
     const [matchDetails, setMatchDetails] = useState([]);
+    const [matchId,setMatchId] = useState("");
 
     useEffect(() => {
         let getData = async () => {
@@ -20,6 +21,7 @@ const ShowMatchDetails = () => {
     console.log("Match DETAILS !!!!",matchDetails);
 
     const teamIdHandler = (val) => {
+        setMatchId(val);
         navigate({
             pathname:'/matchId',
             search: createSearchParams({
@@ -27,6 +29,14 @@ const ShowMatchDetails = () => {
             }).toString()
         });
     }
+
+    const createTeamHandler = () => {
+        navigate({
+            pathname:'/createTeam'
+        })
+    }
+
+
     return (
         <>
             <div className='homeHeader'>
@@ -35,6 +45,7 @@ const ShowMatchDetails = () => {
                 <span className='pointSystemBtn'>Point System</span>
                 <span className='aboutUsBtn'>About Us</span>
                 <span className='offersBtn'>Offers</span>
+                <button onClick={createTeamHandler} className="create-team-btn">Create Team</button>
             </div>
             <h1 className="match-details-title">Match details are below</h1>
             <table>

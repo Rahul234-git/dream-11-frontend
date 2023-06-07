@@ -3,6 +3,12 @@ import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Home from './Components/Home';
 import ShowMatchDetails from './Components/ShowMatchDetails';
 import MatchDetails from './Components/MatchDetails';
+import CreateTeam from './Components/CreateTeam';
+import ViewTeam from './Components/ViewTeam';
+
+
+
+
 
 
 
@@ -14,6 +20,8 @@ const MainRouter = () => {
                 <Route path='/home' element={<Home />} />
                 <Route path='/showmatchdetails' element={<ShowMatchDetails />}/>
                 <Route path='/matchId' element={<MatchDetails />}/>
+                <Route path='/createTeam' element={<CreateTeam />} />
+                <Route path='/viewTeam' element={<ViewTeam />} />
             </Routes>
         </Router>
     )
