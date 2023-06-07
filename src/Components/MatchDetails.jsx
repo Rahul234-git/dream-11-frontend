@@ -18,7 +18,7 @@ const MatchDetails = () => {
         }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
         axios({
                 method:"POST",
-                url:"https://backen-dream-11-api.onrender.com",
+                url:"https://backen-dream-11-api.onrender.com/api/matchDetailsById",
                 // url:"http://localhost:4000/api/matchDetailsById",
                 headers:{"Content-Type":"application/json"},
                 data:sendMatchId

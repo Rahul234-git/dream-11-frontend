@@ -13,7 +13,7 @@ const CreateTeam = () => {
     const navigate = useNavigate();
 
     useEffect(async() => {
-        const getMatchData = await fetch("https://backen-dream-11-api.onrender.com");
+        const getMatchData = await fetch("https://backen-dream-11-api.onrender.com/api/getMatchDetails");
         // const getMatchData = await fetch("http://localhost:4000/api/getMatchDetails");
         const matchDetails = await getMatchData.json();
         setMatchData(matchDetails.response); 
@@ -29,7 +29,7 @@ const CreateTeam = () => {
         };
         axios({
             method:"POST",
-            url:"https://backen-dream-11-api.onrender.com",
+            url:"https://backen-dream-11-api.onrender.com/api/createTeam",
             // url:"http://localhost:4000/api/createTeam",
             headers:{"Content-Type":"application/json"},
             data: dataTeam

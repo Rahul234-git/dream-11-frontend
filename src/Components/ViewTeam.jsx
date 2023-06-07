@@ -9,7 +9,7 @@ const ViewTeam = () => {
 
     useEffect(() => {
         const getTeamData =async () => {
-            const getTeam = await fetch("https://backen-dream-11-api.onrender.com");
+            const getTeam = await fetch("https://backen-dream-11-api.onrender.com/api/getTeamData");
             // const getTeam = await fetch("http://localhost:4000/api/getTeamData");
             const teamDetails = await getTeam.json();
             setTeamData(teamDetails.response);
