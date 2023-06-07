@@ -12,11 +12,20 @@ const CreateTeam = () => {
     const [teamData,setTeamData] = useState("");
     const navigate = useNavigate();
 
-    useEffect(async() => {
-        const getMatchData = await fetch("https://backen-dream-11-api.onrender.com/api/getMatchDetails");
+    useEffect(() => {
+        async function fetchData() {
+            const getMatchData = await fetch("https://backen-dream-11-api.onrender.com/api/getMatchDetails");
+            // const getMatchData = await fetch("http://localhost:4000/api/getMatchDetails");
+            const matchDetails = await getMatchData.json();
+            setMatchData(matchDetails.response); 
+
+        }
+        fetchData();
+
+        // const getMatchData = await fetch("https://backen-dream-11-api.onrender.com/api/getMatchDetails");
         // const getMatchData = await fetch("http://localhost:4000/api/getMatchDetails");
-        const matchDetails = await getMatchData.json();
-        setMatchData(matchDetails.response); 
+        // const matchDetails = await getMatchData.json();
+        // setMatchData(matchDetails.response); 
     },[]);
 
     const handleChange = (val) => {

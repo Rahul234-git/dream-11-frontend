@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate,createSearchParams, Link } from 'react-router-dom';
+import { useNavigate,createSearchParams } from 'react-router-dom';
 import '../Assests/Css/Home.css';
 import logo from '../Assests/Images/halaplay_logo.png';
 import '../Assests/Css/ShowMatchDetails.css';
@@ -8,7 +8,7 @@ import '../Assests/Css/ShowMatchDetails.css';
 const ShowMatchDetails = () => {
     const navigate = useNavigate();
     const [matchDetails, setMatchDetails] = useState([]);
-    const [matchId,setMatchId] = useState("");
+    // const [matchId,setMatchId] = useState("");
 
     useEffect(() => {
         let getData = async () => {
@@ -22,7 +22,7 @@ const ShowMatchDetails = () => {
     console.log("Match DETAILS !!!!",matchDetails);
 
     const teamIdHandler = (val) => {
-        setMatchId(val);
+        // setMatchId(val);
         navigate({
             pathname:'/matchId',
             search: createSearchParams({

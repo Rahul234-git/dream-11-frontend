@@ -1,5 +1,5 @@
-import React,{ useEffect, useState } from "react";
-import {useSearchParams} from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { useSearchParams } from 'react-router-dom';
 import '../Assests/Css/Home.css';
 import logo from '../Assests/Images/halaplay_logo.png';
 import '../Assests/Css/MatchDetails.css';
@@ -7,27 +7,30 @@ import axios from 'axios';
 
 
 const MatchDetails = () => {
-    const [matchDetails,setMatchDetails] = useState([]);
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [matchDetails, setMatchDetails] = useState([]);
+    const [searchParams] = useSearchParams();
     const params = searchParams.get("matchId");
     console.log(params);
-    
+
     useEffect(() => {
-        const sendMatchId = {
-            matchId:params
-        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-        axios({
-                method:"POST",
-                url:"https://backen-dream-11-api.onrender.com/api/matchDetailsById",
+        function saveDataDB() {
+            const sendMatchId = {
+                matchId: params
+            }
+            axios({
+                method: "POST",
+                url: "https://backen-dream-11-api.onrender.com/api/matchDetailsById",
                 // url:"http://localhost:4000/api/matchDetailsById",
-                headers:{"Content-Type":"application/json"},
-                data:sendMatchId
+                headers: { "Content-Type": "application/json" },
+                data: sendMatchId
             }).then(result => {
                 setMatchDetails(result.data.response);
             }).catch(error => {
                 console.log(error);
-        });
-    },[]);
+            });
+        }
+        saveDataDB();
+    }, []);
 
 
     return (
@@ -64,7 +67,7 @@ const MatchDetails = () => {
                 </thead>
                 <tbody>
                     {
-                        matchDetails.map((item,index) => {
+                        matchDetails.map((item, index) => {
                             return (
                                 <tr key={index}>
                                     <td>{item.match_id}</td>
