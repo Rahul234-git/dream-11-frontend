@@ -12,7 +12,8 @@ const ShowMatchDetails = () => {
 
     useEffect(() => {
         let getData = async () => {
-            const getMatchData = await fetch("http://localhost:4000/api/getMatchDetails");
+            const getMatchData = await fetch("https://backen-dream-11-api.onrender.com");
+            // const getMatchData = await fetch("http://localhost:4000/api/getMatchDetails");
             const matchData = await getMatchData.json();
             setMatchDetails(matchData.response);
         }
